@@ -10,22 +10,26 @@ char getRandomChar()
     return char(rand() % 26 + 'A');
 }
 
-int main() {
+int main() 
+{
+    // get a random letter
     char correctChar = getRandomChar();
+    // get a letter given by user
     char userInput;
-
     cout << "ÊäÈë×ÖÄ¸ ";
     cout << correctChar << endl;
-
-    while (true) {
+    // guess if it is the same as the given letter
+    while (true) 
+    {
         cout << "ÇëÊäÈë: ";
         cin >> userInput;
-
-        if (toupper(userInput) == toupper(correctChar)) {
+        if (toupper(userInput) == toupper(correctChar)) 
+        {
             cout << "ÕıÈ· " << correctChar << endl;
             break;
         }
-        else {
+        else 
+        {
             cout << "´íÎó " << correctChar << endl;
         }
     }
