@@ -4,12 +4,13 @@
 #include <cctype>
 using namespace std;
 // return a random Captured  letter
-char getRandomChar() {
+char getRandomChar() 
+{
+    srand(static_cast<unsigned int>(time(0)));
     return char(rand() % 26 + 'A');
 }
 
 int main() {
-    srand(static_cast<unsigned int>(time(0)));
     char correctChar = getRandomChar();
     char userInput;
 
