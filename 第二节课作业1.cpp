@@ -3,6 +3,7 @@
 #include <ctime>
 #include <cctype>
 using namespace std;
+// return a random Captured  letter
 char getRandomChar() {
     return char(rand() % 26 + 'A');
 }
